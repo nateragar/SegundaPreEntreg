@@ -139,25 +139,24 @@ h2{
 
 /* Feature Products */
 
-.feature-products>h2{
+.feature-products > h2 {
     color: white;
     text-align: center;
-    text-shadow: -5px -2px 11px rgba(0,0,0,0.83);
+    text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
 }
 
-.feature-products img{
-    width: 350px;
-}
-
-.feature-products .games{
-    color: white;
-    text-shadow: -5px -2px 11px rgba(0,0,0,0.83);
-    text-align: center;
-}
-
-.flexgames{
+.feature-products .flexgames {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.feature-products .games {
+    color: white;
+    text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
+    text-align: center;
+    margin: 10px; 
+    width: calc(33.33% - 20px); 
 }
 
 
@@ -191,6 +190,10 @@ footer{
     align-items: center;
     padding: 10px 0px;
     border-top: 1px solid; color: black;
+}
+
+.footerp{
+    text-shadow: -5px -2px 11px rgba(0,0,0,0.83);   
 }
 
 
@@ -459,10 +462,9 @@ input{
         height: auto;
     }
 
-    .flexgames .games img {
-        width: 80%; 
-        max-width: 200px; 
-        margin: 0 auto 1rem; 
+
+    .feature-products .games {
+        width: calc(100% - 20px); /* En dispositivos móviles, ocupan el ancho completo con margen */
     }
 
     .flexeditions .card {
@@ -556,6 +558,20 @@ input{
 
     p {
         margin-bottom: 1rem; /* Espaciado entre el párrafo y el siguiente elemento */
+    }
+
+    .formulario {
+        width: 80%; /* Ajusta el ancho del formulario en dispositivos móviles */
+        margin: 0 auto; /* Centra el formulario en la pantalla */
+    }
+
+    .form-control {
+        font-size: 16px; /* Ajusta el tamaño de fuente para los campos de entrada */
+    }
+
+    .boton {
+        width: 100%; /* Hace que los botones ocupen el ancho completo del contenedor */
+        margin-top: 10px; /* Añade un espacio entre los botones */
     }
 
 }
