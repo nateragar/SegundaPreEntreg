@@ -11,6 +11,10 @@ html{
     font-size: 62.5%
 }
 
+p{
+    color: white;
+}
+
 body {
     font-family: 'Bitter', serif;
     background-color: rgb(22, 61, 22);
@@ -301,6 +305,23 @@ h3{
     width: 100%;
 }
 
+/* Carousel Section */
+
+.carousel-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+
+#carouselExample {
+    width: 100%; 
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 20px auto; 
+}
+
 
 /*   Shop   */
 
@@ -481,17 +502,67 @@ input{
         order: -1; 
         margin-bottom: 1rem; 
     }
-}
 
-@media only screen and (max-width: 768px) {
     .flexeditions {
-        grid-template-columns: 1fr; /* Cambiar a una columna para dispositivos móviles */
+        grid-template-columns: 1fr; 
     }
+      
+    .triforce1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .triforcecontenido1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .triforcecontenido1 img {
+        max-width: 100%; 
+        height: auto;
+        margin-bottom: 1rem; 
+    }
+
+    h3 {
+        margin-bottom: 0.5rem; 
+    }
+
+    .triforce1 > div {
+        width: 100%;
+    }
+
+    .gridcreacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenidocreation {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem; /* Espaciado entre elementos */
+    }
+
+    .imgcreation img {
+        max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible */
+        height: auto;
+        margin-bottom: 1rem; /* Espaciado entre la imagen y el título */
+    }
+
+    h3 {
+        margin-bottom: 0.5rem; /* Espaciado entre el título y el párrafo */
+    }
+
+    p {
+        margin-bottom: 1rem; /* Espaciado entre el párrafo y el siguiente elemento */
+    }
+
 }
 
 @media only screen and (min-width: 769px) {
     .flexeditions {
-        grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas para dispositivos de escritorio */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
