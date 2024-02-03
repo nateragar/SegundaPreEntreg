@@ -214,7 +214,6 @@ footer{
 
 .flexeditions h4, p{
     margin: 10px 0;
-    color: aliceblue;
 }
 
 h1{
@@ -227,8 +226,25 @@ h1{
 
 }
 
-h4{
-    font-weight: bold;
+
+.flexeditions .card {
+    background-color: rgb(22, 61, 22); 
+    border: 1px solid rgb(189, 146, 39); 
+    color: white; 
+}
+
+.flexeditions .card-title {
+    color: white; 
+    font-weight: bold; 
+}
+
+
+.flexeditions .card-text {
+    color: white; 
+}
+
+.flexeditions {
+    padding-bottom: 20px; 
 }
 
 
@@ -422,15 +438,16 @@ input{
         height: auto;
     }
 
-    .flexgames {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .flexgames .games img {
         width: 80%; 
         max-width: 200px; 
         margin: 0 auto 1rem; 
+    }
+
+    .flexeditions .card {
+        width: 100%;
+        margin-bottom: 20px; 
+        flex-direction: column;
     }
 
     .feature-products img {
@@ -463,6 +480,18 @@ input{
     .imagen-presentation img {
         order: -1; 
         margin-bottom: 1rem; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .flexeditions {
+        grid-template-columns: 1fr; /* Cambiar a una columna para dispositivos móviles */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .flexeditions {
+        grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas para dispositivos de escritorio */
     }
 }
 
