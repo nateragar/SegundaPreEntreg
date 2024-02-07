@@ -464,7 +464,7 @@ input{
 
 
     .feature-products .games {
-        width: calc(100% - 20px); /* En dispositivos móviles, ocupan el ancho completo con margen */
+        width: calc(100% - 20px); 
     }
 
     .flexeditions .card {
@@ -543,35 +543,35 @@ input{
     .contenidocreation {
         text-align: center;
         width: 100%;
-        margin-bottom: 2rem; /* Espaciado entre elementos */
+        margin-bottom: 2rem; 
     }
 
     .imgcreation img {
-        max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible */
+        max-width: 100%; 
         height: auto;
-        margin-bottom: 1rem; /* Espaciado entre la imagen y el título */
+        margin-bottom: 1rem; 
     }
 
     h3 {
-        margin-bottom: 0.5rem; /* Espaciado entre el título y el párrafo */
+        margin-bottom: 0.5rem; 
     }
 
     p {
-        margin-bottom: 1rem; /* Espaciado entre el párrafo y el siguiente elemento */
+        margin-bottom: 1rem; 
     }
 
     .formulario {
-        width: 80%; /* Ajusta el ancho del formulario en dispositivos móviles */
-        margin: 0 auto; /* Centra el formulario en la pantalla */
+        width: 80%; 
+        margin: 0 auto; 
     }
 
     .form-control {
-        font-size: 16px; /* Ajusta el tamaño de fuente para los campos de entrada */
+        font-size: 16px;
     }
 
     .boton {
-        width: 100%; /* Hace que los botones ocupen el ancho completo del contenedor */
-        margin-top: 10px; /* Añade un espacio entre los botones */
+        width: 100%; 
+        margin-top: 10px; 
     }
 
 }
