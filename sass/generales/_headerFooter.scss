@@ -1,0 +1,74 @@
+// Estilos para el header
+header {
+    background-color: $color-headeryfooter;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+
+    // Estilos para la imagen dentro del header
+    img {
+        width: 60px;
+        margin-top: 2px;
+        margin-left: 3px;
+    }
+
+    // Estilos para el título dentro del header
+    h1 {
+        text-align: center;
+        text-shadow: -5px -2px 11px $shadow;
+        color: $color-text;
+        padding-top: 3rem;
+        font-weight: bold;
+    }
+
+    // Estilos para la lista de navegación dentro del header
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+
+        // Estilos para cada ítem de la lista de navegación
+        li {
+            display: inline-block;
+
+            // Estilos para los enlaces dentro de cada ítem de la lista de navegación
+            a {
+                color: $color-text;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+
+            // Espacio entre los ítems de la lista de navegación
+            &:not(:last-child) {
+                margin-right: 3%;
+            }
+        }
+    }
+
+    // Estilos para la barra de navegación
+    nav {
+        width: 40%;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(189, 146, 39);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-top: 1px solid black; // Nota: aquí corregí la definición del borde superior
+}
+
+.footerp {
+    text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
+}
