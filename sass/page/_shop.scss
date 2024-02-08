@@ -1,0 +1,34 @@
+/* Shop */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .producto {
+        margin: 10px;
+        width: 300px;
+
+        .cuadro {
+            border: 1px solid #ccc;
+            padding: 10px;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+
+            .productoimg {
+                width: 100%;
+                height: auto;
+            }
+
+            .info {
+                text-align: center;
+            }
+        }
+    }
+}
