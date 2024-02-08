@@ -143,6 +143,7 @@ footer {
 
 /* Presentacion */
 .quote {
+  margin-top: 2rem;
   text-align: center;
   color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
