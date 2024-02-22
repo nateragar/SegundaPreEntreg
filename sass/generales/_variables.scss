@@ -5,3 +5,8 @@ $color-background: rgb(22, 61, 22);
 $color-headeryfooter: rgb(189, 146, 39);
 $color-text: white;
 $shadow: rgba(0,0,0,0.83);
+
+@mixin texto-con-sombra {
+    color: $color-text;
+    text-shadow: -5px -2px 11px $shadow;
+}

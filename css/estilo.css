@@ -27,6 +27,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: white;
+  color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
 }
 
@@ -36,12 +37,14 @@ h2 {
   font-weight: bold;
   text-align: center;
   color: white;
+  color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
 }
 
 h3 {
   color: white;
   font-weight: bold;
+  color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
 }
 
@@ -161,6 +164,7 @@ footer {
 .feature-products > h2 {
   color: white;
   text-align: center;
+  color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
 }
 
@@ -172,6 +176,7 @@ footer {
 
 .feature-products .games {
   color: white;
+  color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
   text-align: center;
   margin: 10px;
@@ -182,6 +187,7 @@ footer {
 .latest-news > h2 {
   color: white;
   text-align: center;
+  color: white;
   text-shadow: -5px -2px 11px rgba(0, 0, 0, 0.83);
 }
 
@@ -495,7 +501,64 @@ footer {
     padding: 8px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  main {
+    padding: 20px;
+  }
+  .banner {
+    height: 200px;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation .description {
+    order: 2;
+  }
+  .presentation .imagen-presentation {
+    order: 1;
+  }
+  .flexeditions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gridcreacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .productos .producto {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  .mainContacto {
+    padding: 20px;
+  }
+  .mainContacto .formulario {
+    margin-bottom: 20px;
+  }
+  .mainContacto .music {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1025px) {
   .flexeditions {
     grid-template-columns: repeat(3, 1fr);
   }
